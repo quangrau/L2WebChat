@@ -1,0 +1,211 @@
+/* app css stylesheet */
+html {
+  height: 90%;
+}
+
+body, .wrapper {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+  background: #efefef;
+}
+
+a {
+  color: #7a62d3;
+  text-decoration: none;
+}
+
+.left-side, .right-side {
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+}
+
+.wrapper {
+    display: table;
+    width: 100%;
+    margin-top: -$headerHeight;
+    padding-top: $headerHeight;
+}
+
+.row {
+    height: 100%;
+    margin: 0;
+    display: table-row;
+    &:before, &:after {
+        content: none;
+    }
+}
+
+.left-side {
+  background: #FFFFFF;
+  padding: 0;
+}
+
+.right-side {
+
+}
+
+.left-side .nav-tabs {
+  margin-bottom: 0px;
+  background-color: #d1dade;
+  padding: 0;
+}
+
+.left-side .nav-tabs > li {
+  margin-bottom: -3px;
+}
+
+.left-side .nav-tabs > li > a:hover {
+  background: none;
+}
+
+.left-side .nav-tabs > .active > a:hover {
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.left-side .nav-tabs > li > a {
+  border: 0px;
+  padding: 15px 20px;
+  color: #8e9aa2;
+  min-width: 70px;
+}
+
+.left-side .nav-tabs > .active > a, 
+.left-side .nav-tabs > .active > a:hover, 
+.left-side .nav-tabs > .active > a:focus {
+  color: #505458;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  /* border-top-left-radius: 3px; */
+  border-top-right-radius: 3px;
+  /* -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); */
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); */
+}
+
+.navbar-static-top, .navbar-fixed-top {
+  border-top: 2px solid #7a62d3 !important;
+  -webkit-box-shadow: 0 -3px 12px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 -3px 12px rgba(0,0,0,0.5);
+  box-shadow: 0 -3px 12px rgba(0,0,0,0.5);
+}
+
+.navbar-default .navbar-brand {
+  color: #7a62d3;
+}
+
+.menu-header h1{
+  margin: 0; 
+}
+
+#content {
+  
+}
+
+/* Chat app style */
+#chat-room {
+  border: 1px solid #DDD;
+  border-bottom: 0;
+}
+
+.chat-content {
+  min-height: 300px;
+  padding: 10px;
+  font-size: 12px;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.chat-content p {
+  margin: 0;
+}
+
+.chat-content p.shout {
+  color: #fd7101;
+}
+.chat-content p.trade {
+  color: #e5a1ef;
+}
+
+.chat-box {
+  border: 1px solid #DDD;
+  border-top: none;
+  padding: 15px 10px 10px;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+
+.tabs-below > .nav-tabs {
+  border-bottom: 0 !important;
+  background: #f5f5f5;
+}
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd !important;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+
+
+.tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+
+.tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+.tabs-below > .nav-tabs > li > a:hover,
+.tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent;
+}
+
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+.nav > li > a {
+  padding: 10px 30px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border-width: 0 !important;
+}
+
+.chat-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.chat-box ul li {
+  float: left;
+}
+.chat-setting {
+  float: left;
+  margin-top: 7px;
+  color: #333;
+}

@@ -104,13 +104,14 @@ body {
 .chat-content {
   padding: 10px;
   color: #FFFFFF;
+  font-size: 12px;
 }
 
 .chat-content p {
   margin: 0;
 }
 
-.chat-content p.general, a.general {
+.chat-content p.normal, a.normal {
   color: #FFFFFF;
 }
 
@@ -123,11 +124,18 @@ body {
 }
 
 .chat-content p.clan, a.clan {
-  color: blue;
+  color: #2a6496;
 }
 
 .chat-content p.party, a.party {
-  color: green;
+  color: #00ff00;
+}
+
+.chat-content p.pm, a.pm {
+    color: #b230a5;
+}
+.chat-content p.ally, a.ally {
+    color: #a6deb8;
 }
 
 .channels-tab ul {

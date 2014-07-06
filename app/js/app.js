@@ -10,6 +10,6 @@ angular.module('L2WebChat', [
   'L2WebChat.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/chat', {templateUrl: 'partials/chat.html', controller: 'chatCtrl'});
-  $routeProvider.otherwise({redirectTo: '/chat'});
+  $routeProvider.when('/', {templateUrl: 'partials/chat.html', controller: 'chatCtrl'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);

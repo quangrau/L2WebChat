@@ -118,7 +118,7 @@ body {
   color: #fd7101;
 }
 
-.chat-content p.trade, a.trade {
+.chat-content p.market, a.market {
   color: #e5a1ef;
 }
 
@@ -141,11 +141,11 @@ body {
 
 .channels-tab ul li {
     float: left;
-    padding: 10px 30px;
     border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.channels-tab ul li.active {
+.channels-tab ul li.active,
+.channels-tab ul li.active:hover {
     background: #3f3f3f;
     moz-box-shadow: 1px 0px 5px #888;
     -webkit-box-shadow: 1px 0px 5px #888;
@@ -154,6 +154,12 @@ body {
 
 .channels-tab ul li a {
     text-decoration: none;
+    padding: 10px 30px;
+    display: block;
+}
+.channels-tab ul li:hover {
+    cursor: pointer;
+    background: rgba(150, 150, 150, 0.15);
 }
 
 .chat-form {
